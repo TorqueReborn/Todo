@@ -14,10 +14,10 @@
                 hover:bg-amber-500
             ">Add Todo</button>
     </div>
-
-    <ul>
-        @for (todo of todoList; track $index) {
+    @for (todo of todoList; track $index) {
+    <ul class="flex gap-5">
+        <li>{{$index + 1}}</li>
         <li>{{todo.todo}}</li>
-        }
     </ul>
+    }
 </div>
