@@ -3,3 +3,9 @@
 <input [(ngModel)]="todo" type="text" placeholder="Enter Todo">
 <button (click)="addTodo()">Add Todo</button>
 <br>
+
+<ul>
+    @for (todo of todoList; track $index) {
+        <li>{{todo.todo}}</li>
+    }
+</ul>
