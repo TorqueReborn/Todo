@@ -10,8 +10,9 @@ import { Component, signal } from '@angular/core';
 export class App {
   protected readonly title = signal('todo');
   todo = ""
-  todoList: { id: string, todo: string }[] = []
+  todoList: { id: number, todo: string }[] = []
   addTodo() {
-    console.log(this.todo)
+    this.todoList.push({id: this.todoList.length + 1, todo: this.todo})
+    console.log(this.todoList)
   }
 }
