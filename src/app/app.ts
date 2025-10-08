@@ -13,5 +13,6 @@ export class App {
   todoList: { id: number, todo: string }[] = []
   addTodo() {
     this.todoList.push({ id: this.todoList.length + 1, todo: this.todo })
+    this.todo = ""
   }
 }
