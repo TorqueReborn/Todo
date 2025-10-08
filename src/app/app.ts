@@ -10,6 +10,7 @@ import { Component, signal } from '@angular/core';
 export class App {
   protected readonly title = signal('todo');
   todo = ""
+  todoList: { id: string, todo: string }[] = []
   addTodo() {
     console.log(this.todo)
   }
