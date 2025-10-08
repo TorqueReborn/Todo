@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.center {
+    @apply flex flex-col items-center justify-center h-screen;
+}
+
+.common {
+    @apply p-2 m-4 border-2 rounded-md border-amber-600 focus:outline-none focus:border-amber-500;
+}

@@ -1,23 +1,16 @@
-<div class="flex flex-col items-center justify-center h-screen">
+<div class="center">
     <h1 class="text-4xl text-amber-400 font-semibold">Todo</h1>
 
     <div>
-        <input [(ngModel)]="todo" type="text" placeholder="Enter Todo" (keyup.enter)="addTodo()"
-            class="p-2 m-4 border-2 rounded-md border-amber-600 focus:outline-none focus:border-amber-500">
-        <button (click)="addTodo()" class="
-                p-2
-                border-2
-                rounded-md
-                border-amber-600
-                focus:outline-none
-                focus:border-amber-500
-                hover:bg-amber-500
-            ">Add Todo</button>
+        <input [(ngModel)]="todo" type="text" placeholder="Enter Todo" (keyup.enter)="addTodo()" class="common">
+        <button (click)="addTodo()" class="common">Add Todo</button>
     </div>
-    @for (todo of todoList; track $index) {
-    <ul class="flex gap-5">
-        <li>{{$index + 1}}</li>
-        <li>{{todo.todo}}</li>
-    </ul>
-    }
+    <div class="h-0">
+        @for (todo of todoList; track $index) {
+        <ul class="flex gap-5">
+            <li>{{$index + 1}}</li>
+            <li>{{todo.todo}}</li>
+        </ul>
+        }
+    </div>
 </div>
