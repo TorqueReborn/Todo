@@ -9,4 +9,8 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('todo');
+  todo = ""
+  addTodo() {
+    console.log(this.todo)
+  }
 }
