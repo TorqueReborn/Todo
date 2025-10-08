@@ -3,7 +3,7 @@
 
     <div>
         <input [(ngModel)]="todo" type="text" placeholder="Enter Todo" (keyup.enter)="addTodo()" class="common">
-        <button (click)="addTodo()" class="common">Add Todo</button>
+        <button (click)="addTodo()" class="common hover:bg-amber-500">Add Todo</button>
     </div>
     <div class="h-0">
         @for (todo of todoList; track $index) {
