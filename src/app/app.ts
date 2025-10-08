@@ -4,8 +4,7 @@ import { Component, signal } from '@angular/core';
 @Component({
   selector: 'app-root',
   imports: [FormsModule],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.html'
 })
 export class App {
   protected readonly title = signal('todo');
