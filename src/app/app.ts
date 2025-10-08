@@ -12,6 +12,7 @@ export class App {
   todo = ""
   todoList: { id: number, todo: string }[] = []
   addTodo() {
+    if (!this.todo) return
     this.todoList.push({ id: this.todoList.length + 1, todo: this.todo })
     this.todo = ""
   }
